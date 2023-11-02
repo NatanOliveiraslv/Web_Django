@@ -10,6 +10,7 @@ document.getElementById('add_client').addEventListener('submit', function (event
     })
         .then(response => response.json())
         .then(data => {
+            alert(data.success)
             if (data.success) {
                 alert('Cliente cadastrado com sucesso!');
                 // Redirecione ou faça qualquer outra ação desejada

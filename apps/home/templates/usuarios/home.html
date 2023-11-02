@@ -11,7 +11,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="{% static '/css/estilo.css' %}">
-  <script src="{% static '/css/script.js' %}"></script>
 
   <title>Pagina Principal</title>
 </head>
@@ -36,7 +35,7 @@
         <label for="address">Endereço: </label>
         <input type="text" id="address" name="address" required><br>
         <label for="cell_phone">Telefone: </label>
-        <input type="tel" id="cell_phone" name="cell_phone" required><br>
+        <input type="text" id="cell_phone" name="cell_phone" maxlength="15" required><br>
         <label for="email">E-mail: </label>
         <input type="email" id="email" name="email" required><br>
         <label for="gender">Genero: </label>
@@ -49,6 +48,9 @@
       </div>
     </div>
   </form>
+
+  <script src="{% static '/JS/validaTelefone.js' %}"></script>
+  <script src="{% static '/JS/script.js' %}"></script>
 
   <!-- Optional JavaScript; choose one of the two! -->
 
