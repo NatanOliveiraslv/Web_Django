@@ -1,5 +1,5 @@
 db.sqlite3
-modeloapp/__pycache__/*
+A3app/__pycache__/*
 /apps/categories/__pycache__/*
 /apps/categories/migrations/*
 /apps/products/__pycache__/*
@@ -10,3 +10,5 @@ modeloapp/__pycache__/*
 /apps/clients/migrations/*
 /apps/orders/__pycache__/*
 /apps/orders/migrations/*
+/apps/home/__pycache__/*
+/apps/home/migrations/*
