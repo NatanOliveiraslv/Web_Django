@@ -1,8 +1,8 @@
-document.getElementById('add_client').addEventListener('submit', function (event) {
+document.getElementById('add_categoria').addEventListener('submit', function (event) {
     event.preventDefault(); // Impedir o envio padrão do formulário
 
     const formData = new FormData(this);
-    const endpointUrl = 'http://localhost:8000/clientes/clientes/';
+    const endpointUrl = 'http://localhost:8000/categorias/categorias/';
 
     fetch(endpointUrl, {
         method: 'POST',
@@ -10,8 +10,7 @@ document.getElementById('add_client').addEventListener('submit', function (event
     })
         .then(response => response.json())
         .then(data => {
-            alert(data.success)
-            if (data.success) {
+            if (data.success === undefined) {
                 alert('Cliente cadastrado com sucesso!');
                 // Redirecione ou faça qualquer outra ação desejada
             } else {

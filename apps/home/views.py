@@ -1,4 +1,7 @@
 from django.shortcuts import render
 
-def home(request):
-    return render(request, 'usuarios/home.html')
+def cliente(request):
+    return render(request, 'usuarios/cliente.html')
+
+def categoria(request):
+    return render(request, 'usuarios/categoria.html')

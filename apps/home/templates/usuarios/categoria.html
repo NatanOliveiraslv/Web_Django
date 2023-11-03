@@ -23,34 +23,21 @@
     </div>
   </nav>
 
-  <form id="add_client" method="post">
+  <form id="add_categoria" method="post">
     {% csrf_token %}
     <div style="text-align: center;" class="container">
-      <h1 style="margin-top: 30px;">Cadastro de clientes</h1>
+      <h1 style="margin-top: 30px;">Cadastro de categorias</h1>
       <div class="form">
-        <label for="first_name">Nome: </label>
-        <input style="width: 500px;" type="text" id="first_name" name="first_name" required><br>
-        <label for="last_name">Sobrenome: </label>
-        <input type="text" id="last_name" name="last_name" required><br>
-        <label for="address">Endereço: </label>
-        <input type="text" id="address" name="address" required><br>
-        <label for="cell_phone">Telefone: </label>
-        <input type="text" id="cell_phone" name="cell_phone" maxlength="15" required><br>
-        <label for="email">E-mail: </label>
-        <input type="email" id="email" name="email" required><br>
-        <label for="gender">Genero: </label>
-        <select name="gender">
-          <option value="M">Masculino</option>
-          <option value="F">Feminino</option>
-          <option value="O">Outros</option>
-        </select><br>
+        <label for="name">Nome: </label>
+        <input style="width: 500px;" type="text" id="name" name="name" required><br>
+        <label for="description">Descrição: </label>
+        <input type="description" id="description" name="description" required><br>
         <button type="submit">Enviar</button>
       </div>
     </div>
   </form>
 
-  <script src="{% static '/JS/validaTelefone.js' %}"></script>
-  <script src="{% static '/JS/script.js' %}"></script>
+  <script src="{% static '/JS/postCategoria.js' %}"></script>
 
   <!-- Optional JavaScript; choose one of the two! -->
 
