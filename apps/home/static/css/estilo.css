@@ -5,16 +5,23 @@
    flex-wrap: wrap;
    align-content: center;
    justify-content: flex-start;
+   margin-top: 35px;
 }
 
 .form label {
    text-align: left;
 }
 
-.form input {
+.form input , textarea {
    padding-left: 10px;
    border-radius: 20px;
    height: 45px;
+   padding: 12px;
+}
+
+.form textarea#description{
+   height: 220px;
+   resize: none;
 }
 
 .form select {
@@ -33,4 +40,7 @@
    background-color: black;
    color: white;
    font-size: 20px;
+   width: 229px;
+   margin: 0 auto;
+   margin-top: 40px;  
 }
