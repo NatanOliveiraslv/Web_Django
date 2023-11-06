@@ -24,13 +24,13 @@
    resize: none;
 }
 
-.form select {
+.form select{
    padding-left: 10px;
    border-radius: 20px;
    height: 45px;
 }
 
-.selectForm option {
+.form select,option{
    text-align: center;
 }
 

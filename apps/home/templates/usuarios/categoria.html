@@ -15,8 +15,10 @@
       <textarea type="description" id="description" name="description" required></textarea><br>
       <button class="buttonForm" type=" submit">Enviar</button>
     </div>
+
+    {% if sucesso %}
+      <script>alert("Cliente cadastrado com sucesso!")</script>
+    {% endif %}
   </div>
 </form>
-
-<script src="{% static '/JS/postCategoria.js' %}"></script>
 {% endblock %}

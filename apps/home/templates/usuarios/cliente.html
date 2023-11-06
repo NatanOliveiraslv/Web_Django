@@ -27,9 +27,12 @@
       </select><br>
       <button class="buttonForm" type="submit">Enviar</button>
     </div>
+    {% if sucesso %}
+      <script>alert("Cliente cadastrado com sucesso! ")</script>
+    {% endif %}
   </div>
 </form>
 
 <script src="{% static '/JS/validaTelefone.js' %}"></script>
-<script src="{% static '/JS/postCliente.js' %}"></script>
+
 {% endblock %}
